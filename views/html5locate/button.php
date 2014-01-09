@@ -1,0 +1,1 @@
+<input type="button" name="buttonAutoLoc" id="buttonAutoLoc" value="<?php echo Kohana::lang('ui_main.autolocate'); ?>" class="btn_autolocate" />
