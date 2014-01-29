@@ -30,17 +30,12 @@ class html5locate {
                 // Only add the events if we are on that controller
 				Event::add('ushahidi_action.report_form_location', array($this, '_button'));
                 Event::add('ushahidi_action.header_scripts', array($this, '_submit_edit_js'));
+				plugin::add_stylesheet('html5locate/views/html5locate/css/html5locate');
         }
 
 		public function _submit_edit_js()
         {
                 $js = View::factory('html5locate/submit_edit_js');
-
-                // ** Next Version Will Have Floating Windows on Map
-                //$js->categories_view = View::factory('fullscreenmap/categories');
-                //$js->categories_view->categories = $parent_categories;
-                //$js->categories_view->default_map_all = Kohana::config('settings.default_map_all');
-                //$js->categories_view = "";
                 $js->render(TRUE);
         }
         

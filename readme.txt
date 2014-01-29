@@ -17,3 +17,6 @@ author website: http://www.owlbears.pw
 == Changelog ==
 == 1.0
 * May work.
+== 1.2
+* Tested against Ushahidi v2.7.2b; Added styling
+* Will continue to expand into full toolbox for both Submit and Admin Dashboard
